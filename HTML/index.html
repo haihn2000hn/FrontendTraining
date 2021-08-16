@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML CSS</title>
+</head>
+<body>
+    <!--Các thẻ HTML cần biết-->
+    <div></div>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+    <h1>H1</h1>
+    <h2>H2</h2>
+    <a href="https://www.google.com/">google</a>
+    <a href="https://translate.google.com.vn/" target="_blank" rel="noopener noreferrer">translate</a>
+    <img src="" alt="image">
+    <ol>
+        <li>a</li>
+        <li>b</li>
+    </ol>
+    <ul>
+        <li>a</li>
+        <li>b</li>
+    </ul>
+    <header>header</header>
+    <footer>footer</footer>
+    <aside>side bar</aside>
+    <nav>menu</nav>
+    <main>main</main>
+    <section>
+        <article></article>
+    </section>
+    <iframe width="942" height="539" src="https://www.youtube.com/embed/g4GBGAo_riE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <span>đoạn chữ ngắn</span>
+    <strong>hold</strong>
+    <b>bold</b>
+    <em>italic</em>
+    <i>italic</i>
+
+    <!--Phân biệt inline và block-->>
+    <!--thẻ inline sẽ có độ rộng bằng nội dung mà nó chứa, nếu có nhiều thẻ inline nằm với nhau thì nó sẽ nắm trên 1 hàng, bị hạn chế về thuộc tính css-->
+    <!--có độ rộng full phần tử chứa nó, nếu có nhiều thẻ block thì nó sẽ xuống dòng-->
+
+    <!--Sự khác nhau giữa class và id-->>
+    <!--class: có thể trùng nhau, có thể sử dụng cho nhiều phần tử trùng nhau-->
+    <!--id: phải là độc nhất, ko được có cái thứ 2-->
+
+    <!-- B__E--M -->
+
+    <div class="demo">.demo</div>
+    <div id="demo">
+        #demo
+    </div>
+    <div class="demo demo1 demo2">.demo.demo1.demo2</div>
+    
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <!--ul>li*10-->
+
+    <!--Liệt kê 10 thẻ inline, 10 thẻ block và các thẻ semantic HTML5 mà bạn biết-->
+    <!--inline: strong, b ,em ,i, a, button, span, img -->
+    <!--block: div, section, body, h1, h2, h3, h4, h5, h6-->
+    <!--semantic: section, header, footer, nav, aside, main-->
+
+    <!--làm 1 ví dụ về Bem cho block có tên là boy-->
+    <!--boy__head, boy__eye, boy__ear, boy__foot, boy__leg,...-->
+    <!--boy__head--big, boy__eye--brown,...-->
+    <!--boy--tall, boy--thin,...-->
+
+    <!--làm 1 ví dụ về sự kết hợp giữa block và inline-->
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        <a href="#">link</a>
+    </p>
+
+    <div class="dropdown">
+        <div class="dropdown__hover">
+            <span class="dropdown__hovered"></span>
+            <div class="triangle--down">
+        </div>
+        
+        <div class="dropdown__list">
+            <div class="dropdown__item">
+                <span class="dropdown__title"></span>
+                <div class="add-icon">        
+            </div>
+            <div class="dropdown__item">
+                <span class="dropdown__title"></span>
+                <div class="person"> 
+            </div>
+            <div class="dropdown__item">
+                <span class="dropdown__title"></span>
+                <div class="setting"></div>
+            </div>
+            <div class="dropdown__item">
+                <span class="dropdown__title"></span>
+                <div class="logout"></div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html> 
