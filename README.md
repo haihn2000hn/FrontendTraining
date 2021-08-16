@@ -1,4 +1,4 @@
-# FrontendTrainning
+# FrontendTraining
 - [x] Thiết lập code editor cơ bản
 - [x] Thiết lập cấu trúc file HTML cơ bản
 - [x] Các thẻ HTMl cần thiết
