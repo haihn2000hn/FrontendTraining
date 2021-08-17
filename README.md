@@ -1,5 +1,5 @@
 # FrontendTraining
-##HTML
+## HTML
 - [x] Thiết lập code editor cơ bản
 - [x] Thiết lập cấu trúc file HTML cơ bản
 - [x] Các thẻ HTMl cần thiết
@@ -10,7 +10,7 @@
 - [x] Năm vững emmet cơ bản trong VSCode
 - [x] Bài tập thực hành chương 1
 
-##HTML_CSS
+## HTML_CSS
 - [x] CSS reset là gì?
 - [x] Cấu trúc của 1 đoạn code trong CSS như thế nào?
 - [x] Tìm hiểu các thuộc tính về color, các giá trị màu sắc
