@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+}
+
+/*font-size = 16px là mặc định*/
+/*khi đó 1em = 1rem = 16px*/
+
+.em{
+    width: 10em;
+    height: 10em;
+    background-color: rgb(11, 96, 223);
+    font-size: 32px;
+    /*đơn vị em là đơn vị phụ thuộc vào font-size của chính nó hoặc phần tử chứa nó, hình to do font-size đã thay đổi từ 16px lên 32px*/
+}
+
+.rem {
+    width: 10rem;
+    height: 10rem;
+    background-color: rgb(4, 0, 255);
+    font-size: 32px;
+    /*đơn vị em là đơn vị phụ thuộc vào font-size của thẻ html (là mặc định)*/
+    border: 2px solid black; /*bordor có độ dày 2px, viền là nét liền, màu đen*/
+}
+
+.block__border {
+    width: 10em;
+    height: 10em;
+    background-color:rgb(111, 1, 255);
+    border-top: 5px solid black;
+    border-bottom: 10px solid red;
+    border-left: 15px solid brown;
+    border-right: 20px solid yellow;
+}
+
+.block__border2 {
+    width: 10em;
+    height: 10em;
+    background-color:rgb(180, 7, 233);
+    border-radius: 20px 40px 60px 80px;
+    outline: 2px solid green;
+    /*tương tự cũng có thể border từng cạnh*/
+    /*để bo tròn thì ta dùng: border-radius: 50%*/
+}
+
+.block__border3 {
+    width: 10em;
+    height: 10em;
+    background-color:rgb(118, 0, 253);
+    font-size: 32px;
+    margin: 50px;
+    padding: 20px 20px;
+}
+
+a {
+    color:white;
+    text-decoration: none; /*để bỏ dấu gạch chân*/
+    width: 10rem;
+    height: 10rem;
+    padding: 1rem;
+    background-color: rgba(0, 0, 255, 0.199);
+    display: inline-block;
+    /*Thẻ a là thẻ có thuộc tính mắc định là inline, mà thẻ có thuộc tính inline thì rất hạn chế trong việc sử dụng CSS, cho nên để có thể sử dụng CSS linh hoạt thì chúng ta sẽ chuyển thành inline-block(kể hợp giữa inline và block)*/
+    /*display: none dùng để ẩn hoàn toàn cho thẻ sử dụng nó*/
+}
+
+.note2{
+    font-size: 50px;
+    color: red;
+    text-align: center;
+}

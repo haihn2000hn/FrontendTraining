@@ -1,0 +1,39 @@
+p {
+    /* color: value
+    named: red, blue, green
+    hexa: #000000, #ffffff, #abc123
+    rgb: rgb(0,0,0), rgb(255,255,255)
+    alpha: opacity 0 -> 1
+    */
+    color: red;
+    color: #ffa400;
+}
+
+.background {
+    background-color: pink;
+    width: 100px;
+    min-height: 100px; /*giúp chiều cao tự động tăng lên khi nội dung quá dài*/
+    max-height: 200px;
+    /*overflow: hidden;*/
+    /* overflow-y: auto; */
+}
+
+.background2 {
+    /*background-image: url("https://images.unsplash.com/photo-1629085221835-374d2b4f90b1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80");*/
+    /* width: 100%;
+    height: 1000px; */
+    /* background-position: center center;
+    background-repeat: no-repeat; để không bị lặp lại
+    background-attachment: fixed; để hình luôn cố định ở vị trí đã cho trước*/
+    background: white url("https://images.unsplash.com/photo-1629085221835-374d2b4f90b1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80") no-repeat center center / cover;
+
+    width: 100vw;
+    height: 100vh;
+    /*vw với vh sẽ làm full màn hình của web bất kể block chưa nó có độ rộng bao nhiêu*/
+}
+
+.note{
+    font-size: 50px;
+    color: red;
+    text-align: center;
+}

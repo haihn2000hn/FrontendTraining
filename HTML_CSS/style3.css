@@ -1,0 +1,66 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 300;/*số to thì chữ đậm, max 700*/
+    /*font-style: italic; in nghiêng*/
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.font {
+    line-height: 1.5;/*1 là khổng cách mặc định giữa 2 dòng*/
+    text-align: center; /*căn vị trí chữ*/
+    text-align: justify;
+    letter-spacing: normal; /*khoảng cách giữa các ký tự*/
+    word-spacing: normal; /*khoảng cách giữa các từ*/
+    /*white-space: nowrap; không xuống hàng */
+}
+
+.font2 {
+    width: 100%;
+    white-space: nowrap; /*không xuống hàng */
+    overflow: hidden;/*dòng dài quá thì ẩn bớt đi*/
+    text-overflow: ellipsis; /*nếu dòng quá dài thì t sẽ hiện dấu ... ở cuối câu*/
+}
+
+.font3 {
+    /*phần css này giúp chúng ta tùy chỉnh số lượng dòng chữ hiện lên rồi mới ... ở dòng cuối*/
+    width: 300px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; /*số dòng muốn hiển thị*/
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.font4 {
+    /*khi nhập vào 1 dòng dưới dạng spam thì rất dễ bị xuất hiện scroll ngang và ta vẫn muốn hiện thị toàn bộ nội dung thì sau đây là một vài cách khắc phục*/
+    word-break: break-all; /*break theo ký tự*/
+}
+
+.image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover; /*do anh ko phải hình vuông mà t bắt nó thành hình vuông nên ta dùng object-fit: cover để ảnh không bị bóp méo và mặc định sẽ lấy ở giữa*/
+    object-position: top;/*hỗ trợ cho object-fit để lấy vị trị ảnh ta cần*/
+    border-radius: 50%;
+}
+
+.click {
+    color: black;
+}
+
+/* .click:hover {
+    color: red;
+} */
+
+ .click:active {
+    color: green;
+}
+
+/* .click:visited {
+    color: blue;
+} */
