@@ -1,0 +1,45 @@
+h3 + p + .title1 {
+    color: red;
+}
+/* dấu + là liền kề ngay sau, chỉ tính css cho cái cuối cùng*/
+
+h3 ~ .title2 {
+    color: blue;
+}
+
+/*dấu ~ thì ko cần liền kề nhưng vẫn phải ở sau*/
+
+a[href^="https"] {
+    color: red;
+}
+
+a[href$=".vn"] {
+    color: green;
+}
+
+a[href*="demo"] {
+    color: yellow;
+}
+
+p::first-letter {
+    color: red;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.boxed {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    transition: background-color 2s linear, color 2s linear;
+    /* transition-delay: 2s; */
+    color: white;
+    text-align: center;
+    padding-top: 92px;
+    box-sizing: border-box;
+}
+
+.boxed:hover {
+    background-color:red;
+    color: pink;
+}
