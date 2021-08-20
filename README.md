@@ -27,3 +27,18 @@
 - [x] Thuộc tính cho hình ảnh
 - [x] Pseudo là gì?
 - [X] Bài tập thực hành chương 2            
+
+## HTML_CSS2
+- [x] Làm hình nền gradient, chữ gradient
+- [x] HIển thị 2 hình nền với background image
+- [x] Caniuse là gì? Tại sao phải biết
+- [x] Sự khác biệt về 3 thuộc tính: opacity:0, display: none, visibility: hidden
+- [x] Tìm hiểu về shadow trong CSS
+- [x] Sử dụng biến trong CSS
+- [x] Hiểu rõ về độ ưu tiên trong CSS
+- [x] Kiến thức về child selectors
+- [x] Kiến thức về type selectors
+- [x] Thành thạo về combinators trong CSS
+- [x] Các selectors nâng cao
+- [x] Thuộc tính transition cơ bản
+- [x] Bài tập chương 3
