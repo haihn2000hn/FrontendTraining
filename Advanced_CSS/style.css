@@ -1,0 +1,86 @@
+body {
+    height: 5000px;
+}
+
+.box {
+    background-color: blue;
+    height: 50px;
+    width: 100px;
+    /*transform không làm thay đổi vị trí và kích thước thật của thẻ sử dụng nó*/
+    /* transform: scaleX(2) scaleY(2); */
+    /*tương đương với transform: scale(2, 2); tăng chiều dài và rộng lên 2 lần*/
+    transform: rotate(45deg); /*xoay 45 độ theo trục X và Y*/
+    /*ta có thể xoay hình theo trục Z bằng cách tranform: rotateZ(45deg)*/
+    transform: translate(20%, 50px); /*di chuyển theo chiều ngang = 20% chiều dài của vật và theo chiều dọc là 100px*/
+    /* transform: skewX(60deg); làm thẻ nghiêng sang trái 60 độ */
+}
+
+.box2 {
+    background-color: orange;
+    height: 50px;
+    width: 100px;
+    position: relative;/*khá giống transform nhưng k mạnh bằng (không thể scale)*/
+    /*position:static thì các thẻ sử dụng sẽ nằm theo thứ tự văn bản (default)*/
+    left: 50px;
+    top: 10px;
+    bottom:-50px;/*no không dạy dòng này do có nó nhận thuộc tính top*/
+}
+
+.wrap {
+    background-color: black;
+    height: 500px;
+    width: 100%;
+    position: relative; /*có thuộc tính này thì khi thẻ con dùng position thì mới thẻ con mới position theo thẻ cha, còn nếu ko dùng thì thẻ sẽ so theo body*/
+    color:white;
+}
+
+.box3 {
+    position: absolute;
+    background-color: pink;
+    height: 50px;
+    width: 100px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /*sử dụng left: 50% và top: 50% để đưa thẻ cần ra giữa màn hình (góc trên bên trái sẽ ở tâm của block cha) sau đó dùng transform: translate(-50%, -50%) để chỉnh lại vị trí của thẻ về chính giữa block cha (tâm của thẻ dùng sẽ trùng với tâm của block cha)*/
+}
+
+.box4 {
+    position: absolute;
+    background-color: red;
+    bottom: 0;
+    /* width: auto; */
+    left: 0;
+    right: 0;
+    height: 100px;
+    z-index: 2; /*thẻ nào số to hơn thì thằng đó nằm trên*/
+}
+
+
+.box5 {
+    position: fixed;
+    background-color: green;
+    top: 0;
+    left: 0;
+    right: 0;
+    /*thẻ dùng position: fixed thì lúc nào cũng ở vị trí cố định so với phần tử chứ nó kể cả khi lăn chuột (trong trường hượp này là body, để thẻ khác sử dụng thì thẻ đó phải có position: relative)*/
+    /*nếu khai báo trong phần tử có position: fixed các thuộc tính: top-left-right-bottom thì thẻ đó sẽ không lấy thẻ đang chứa nó làm cha mà sẽ lấy cửa số trình duyệt làm cha*/
+    /*không nên dùng fixed với transform do dễ bị bug*/
+}
+
+.wrap2 {
+    margin-top: 100px;
+    background-color: brown;
+    height: 500px;
+    width: 100%;
+    position: relative;
+    /*đay là ví dụ cho trường hợp nếu thẻ con dùng position: fixed mà lại dùng các thẻ thuộc tính top-bottom-left-right thì hiển thị lên màn hình thẻ con có thuộc tính position: fixed sẽ lấy body làm chuẩn*/
+}
+
+.name::before {
+    content:"Toi ten la ";/*Bắt buộc phải có content: ""*/
+}
+
+.name::after {
+    content:" nhe";/*Bắt buộc phải có content: ""*/
+}

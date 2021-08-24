@@ -1,0 +1,26 @@
+.slider__bar {
+    background-color: rgba(128, 128, 128, 0.349);
+    width: 300px;
+    height: 10px;
+    border-radius: 20px;
+    margin: 30px auto 0;
+    position: relative;
+}
+
+.bar__progress {
+    height: 100%;
+    width: 50%;
+    border-radius: inherit;
+    background-color: rgb(73, 151, 224);
+}
+
+.bar__circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(73, 151, 224);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

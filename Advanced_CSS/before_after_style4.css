@@ -1,0 +1,35 @@
+
+
+.effect {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    background-color: white;
+    border: 1px solid black;
+    margin: 100px auto;
+    padding: 20px;
+    transition: color 0.2s linear;
+    position: relative;
+    z-index: 3;
+}
+
+.effect::before { 
+    /*ta phải dùng before để khi hover nó sẽ ưu tiên background-color của thẻ hơn là dùng background-color gốc*/
+    content: "";
+    height: 100%;
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    z-index: -1;
+    transition: width 0.2s linear;
+}
+
+.effect:hover::before {
+    width: 100%;
+}
+
+.effect:hover {
+    color: white
+}
