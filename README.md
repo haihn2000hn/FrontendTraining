@@ -42,3 +42,22 @@
 - [x] Các selectors nâng cao
 - [x] Thuộc tính transition cơ bản
 - [x] Bài tập chương 3
+
+## Kiến thức CSS nâng cao
+- [x] Thuộc tính transform
+- [x] Thuộc tính position static, relative
+- [x] Thành thạo position absolute
+- [x] Thành thạo position fixed, sticky
+- [x] Thực hành với thuộc tính position 1
+- [x] Thực hành với thuộc tính position 2
+- [x] Thực hành với thuộc tính position 3
+- [x] Thực hành với thuộc tính position 4
+- [x] Presudo before và after
+- [x] Thực hành với pseudo before và after 1
+- [x] Thực hành với pseudo before và after 2
+- [x] Thực hành với pseudo before và after 3
+- [x] Thực hành với pseudo before và after 4
+- [x] Thực hành với pseudo before và after 5
+- [x] Thực hành với pseudo before và after 6
+- [ ] Annimation là gì 
+- [ ] Thực hành với animation 1
