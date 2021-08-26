@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+}
+
+.list {
+    --spacing: 20px;
+    display: flex;
+    align-items: stretch;/*làm cho các phần tử bên trong thẻ được display: flex cao bằng nhau (mặc định)*/
+    /* align-items: flex-start; căn cho các thẻ con ngang nhau từ trên xuống (căn trên), nếu các thẻ này không có height bằng nhau thì vẫn sẽ không bằng nhau*/
+    /* align-items: flex-end; căn dưới*/
+    /* align-items: center; căn giữa*/
+    /* align-items: baseline; căn theo div chữ đầu tiên*/
+    justify-content: flex-start;
+    /* flex-wrap: nowrap; cho duf width không đủ thì cũng không rớt xuống hàng (mặc định) */
+    flex-wrap: wrap;
+    margin: 0 calc(var(--spacing) * (-1)); /*bỏ đi 2 phần margin ngoài cùng của list__item*/
+
+}
+
+.list__item {
+    width: calc(33.33% - 2 * var(--spacing));
+    margin: 0 20px;
+}
+
+.list__image {
+    width: 100%;
+}

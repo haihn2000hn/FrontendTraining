@@ -1,0 +1,164 @@
+.container {
+    background-color: rgb(141, 133, 248);
+    padding: 20px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.header {
+    display: flex;
+    height: 40px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 30px;
+
+}
+
+input {
+    background-color: rgb(224, 216, 216);
+    padding-left: 10px;
+    border-radius: 6px;
+}
+
+::placeholder {
+    color:rgb(63, 58, 58);
+}
+
+.body {
+    display: flex;
+
+}
+
+.list {
+    --spacing: 20px;
+    display: flex;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    margin: 30px calc(var(--spacing) * (-1));
+}
+
+
+.list__item {
+    width: calc(25% - 2 * var(--spacing));
+    margin: 0 20px;
+    border-radius: 10%;
+    background-color: white;
+}
+
+.list__image {
+    width: 100%;
+}
+
+img {
+    border-top-right-radius: 10%;
+    border-top-left-radius: 10%;
+}
+
+.list__title {
+    font-size: 20px;
+    padding-left: 20px;
+    width: 330px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.person {
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.detail {
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.game {
+    font-weight: 100;
+}
+
+.item__footer {
+    height: 80px;
+    width: 100%;
+    border-top: 1px solid rgb(221, 221, 221);
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.live {
+    margin-left: 20px;
+    background-color: orange;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.feather-wifi {
+    width: 16px;
+    height: 16px;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    padding-right: 10px;
+}
+
+.watching {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.circle {
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background-color: blue;
+    margin-right: 10px;
+}
+
+.footer {
+    padding: 20px;
+    margin-top: 50px;
+    background-color: white;
+    font-size: 24px;
+}
+
+.follow__list {
+    --spacing: 20px;
+    display: flex;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    margin: 30px calc(var(--spacing) * (-1));
+}
+
+.follow__item {
+    width: calc(12.5% - 2 * var(--spacing));
+    margin: 0 30px;
+    background-color: white;
+}
+
+.follow__avatar {
+    width: 100%;
+    border-radius: 50%;
+    height: 130px;
+    object-fit: cover;
+}
