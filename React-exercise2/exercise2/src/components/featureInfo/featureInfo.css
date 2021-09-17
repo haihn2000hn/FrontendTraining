@@ -1,0 +1,52 @@
+.featureInfo {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.featureItem {
+    width: 230px;
+    height: 100px;
+    background-color: red;
+    border-radius: 12px;
+}
+
+.feature1 {
+    background-color: #1380FF;
+}
+
+.feature2 {
+    background-color: #FF9F43;
+}
+
+.feature3 {
+    background-color: #28C76F;
+}
+
+.feature4 {
+    background-color: #FF4646;
+}
+
+.featureItemWrapper {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.featureIcons {
+    color: #FAFCFF;
+}
+
+.featureItemTitle {
+    margin-left: 5px;
+    font-weight: 600;
+    color: #FAFCFF;
+}
+
+.featureItemNumber {
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 38px;
+    color: #FAFCFF;
+}

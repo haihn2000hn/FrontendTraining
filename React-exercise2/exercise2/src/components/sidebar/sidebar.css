@@ -1,0 +1,62 @@
+.sidebar {
+    flex: 1;
+    margin-left: 12px;
+    padding: 20px 0 12px 8px;
+    border-left: 1px solid #191919;
+}
+
+.chartType {
+    color: #1380FF;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.sidebarButtonGroup {
+    display: flex;
+    justify-content: space-around;
+}
+
+.columnChart, .lineChart, .circleChart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ChartTitle {
+    color: #D0E5FF;
+}
+
+.button {
+    cursor: pointer;
+    width: 40px;
+    height: 46px;
+    background-color: #D0E5FF; 
+}
+
+.sidebarItem {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.optionTitle {
+    color: #1380FF;
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.option {
+    width: 100%;
+    background-color: #333333;
+    color: #D0E5FF;
+    border-color: #eaf0f62c;
+    width: 212px;
+    height: 30px;
+    border-radius: 4px;
+}
+
+.locationOption {
+    color: #d0e5ff6b;
+    margin-top: 10px;
+}
